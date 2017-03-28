@@ -1,0 +1,70 @@
+/*初始化*/
+html,body{
+    padding:0;
+    margin:0;
+}
+html{
+    height:300%;
+}
+body{
+    height:100%;
+}
+
+/*头像框样式设置*/
+.icon{
+    position: relative;
+    top:-10px;
+    width:80px;
+    height:80px;
+    background: url("http://storage-1253499687.costj.myqcloud.com/icon1.jpg") no-repeat center;
+    background-size: 80px 80px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    border-radius:40px;
+}
+
+/*内容区样式*/
+.wrapper{
+    height:100%;
+    background: #2B2E3D;
+}
+
+/*首页区域调整*/
+.intro{
+    width:80%;
+    height:100%;
+    position: absolute;
+    left:50%;
+    margin-left:-40%;
+    background: url('http://storage-1253499687.costj.myqcloud.com/intro2.jpg') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.select{
+    width:25px;
+    height:70px;
+    position: fixed;
+    right:5px;
+    background: rgba(0,0,0,0);
+    text-align: center;
+
+}
+.select button{
+    width:20px;
+    height:20px;
+    border-radius: 10px;
+    border:1px solid lightgreen;
+    outline:none;
+    opacity: 0.2;
+}
+.select button:hover{
+    opacity: 0.5!important;
+}
+
+/*进行响应式设计,当界面小于768px宽度时,调整版面*/
+@media screen and (max-width:768px ) {
+    .navbar-header{
+        display: none;
+    }
+}
+
